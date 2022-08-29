@@ -6,8 +6,9 @@
 
 Before starting, please read the AirBnB concept page.
 
+![AirBnB_clone](https://user-images.githubusercontent.com/70941806/187206832-bdede437-2d4a-407a-bf2b-6dd9f5bfa130.png)
 
-https://youtu.be/E12Xc3H2xqo
+![HBNB Project Overview](https://youtu.be/E12Xc3H2xqo)
 
 ### First step: Write a command interpreter to manage your AirBnB objects.
 This is the first step towards building your first full web application: the AirBnB clone. This first step is very important because you will use what you build during this project with all other following projects: HTML/CSS templating, database storage, API, front-end integration…
