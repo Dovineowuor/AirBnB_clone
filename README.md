@@ -15,18 +15,15 @@ You won’t implement all the features, only some of them to cover all fundament
 <h2>Steps</h2>
 <p>The application won't be built all at once, but step by step.
 Each step will link to a concept</p>
-<h3>The console</h3>
+<h3>The console(command interpreter)</h3>
+<p> The command interpreter will be used to manage the objects of our project:</p>
 <ul>
-  <li>create your data model</li>
-  <li>manage (create, update, destroy, etc) objects via a console / command interpreter</li>
-  <li>store and persist objects to a file (JSON file)</li>
+  <li>Create a new object (ex: a new User or a new Place)</li>
+  <li>Retrieve an object from a file, a database etc…</li>
+  <li>Do operations on objects (count, compute stats, etc…)</li>
+  <li>Update attributes of an object</li>
+  <li>Destroy an object</li>
  </ul>
-<p>The first piece is to manipulate a powerful storage system. This storage engine will give us an abstraction
-between “My object” and “How they are stored and persisted”. This means: from the console code (the
-command interpreter itself) and from the front-end and RestAPI to be built later, you won’t have to pay
-attention (take care) of how your objects are stored.</p>
-<p>This abstraction will also allow you to change the type of storage easily without updating all of your codebase.</p>
-<p>The console will be a tool to validate this storage engine</p>
 <img src="https://github.com/Sgechuki/readme_images/blob/main/model.png" alt="the app framework">
 <h2>Files and Directories</h2>
 <p>
@@ -50,12 +47,3 @@ attention (take care) of how your objects are stored.</p>
   <li>create a simple flow of serialization/deserialization: Instance <-> Dictionary <-> JSON string <-> file</li>
   <li>create all classes used for AirBnB (User, State, City, Place…) that inherit from BaseModel</li>
 </ul>
-What’s a command interpreter?
-Do you remember the Shell? It’s exactly the same but limited to a specific use-case. In our case, we want to be able to manage the objects of our project:
-
-Create a new object (ex: a new User or a new Place)
-Retrieve an object from a file, a database etc…
-Do operations on objects (count, compute stats, etc…)
-Update attributes of an object
-Destroy an object
-
