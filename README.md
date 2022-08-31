@@ -47,7 +47,9 @@ Each step will link to a concept</p>
   <li>create a simple flow of serialization/deserialization: Instance <-> Dictionary <-> JSON string <-> file</li>
   <li>create all classes used for AirBnB (User, State, City, Place…) that inherit from BaseModel</li>
 </ul
-
-### ***Authors:***
-              1. [Dovine Owuor] (https://github.com/dovineowuor)
-              2. [Seth Gechuki] (https://github.com/sgechuki)
+<h2>Authors:</h>
+   
+<ol>
+    <li href = "https://github.com/dovineowuor"> Dovine Owuor </li>
+    <li href = "https://github.com/sgechuki"> Seth Gechuki</li>
+</ol>
