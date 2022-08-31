@@ -46,4 +46,8 @@ Each step will link to a concept</p>
   <li>Create a parent class (called BaseModel) to take care of the initialization, serialization and deserialization of your future instances</li>
   <li>create a simple flow of serialization/deserialization: Instance <-> Dictionary <-> JSON string <-> file</li>
   <li>create all classes used for AirBnB (User, State, City, Place…) that inherit from BaseModel</li>
-</ul>
+</ul
+
+### ***Authors:***
+              1. [Dovine Owuor] (https://github.com/dovineowuor)
+              2. [Seth Gechuki] (https://github.com/sgechuki)
