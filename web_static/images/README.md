@@ -1,0 +1,1 @@
+This folders contains images and icons for our site web
