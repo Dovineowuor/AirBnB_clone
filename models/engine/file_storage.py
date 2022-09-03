@@ -48,7 +48,7 @@ class FileStorage():
         from models.base_model import BaseModel
         try:
             with open(FileStorage.__file_path, "r", encoding="utf-8") as f:
-                 objs = json.load(f)
+                objs = json.load(f)
             for k, v in objs.items():
                 cls_name = k.split('.')[0]
                 obj = eval(cls_name + "(**v)")
