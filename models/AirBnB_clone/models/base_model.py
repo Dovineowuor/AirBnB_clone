@@ -1,12 +1,12 @@
 #!/usr/bin/python3
-"""This module holds class BaseModel
-"""
 import uuid
 from datetime import datetime
 from models import storage
+"""This module holds class BaseModel
+"""
 
 
-class BaseModel():
+class BaseModel:
     """Basemodel is parent class that defines
     all common attributes/methods for other classes
 
@@ -23,7 +23,7 @@ class BaseModel():
         to_dict(self):
     """
     def __init__(self, *args, **kwargs):
-        """Initializes an instance"""
+        """Initialises instances"""
         if kwargs:
             for key, value in kwargs.items():
                 if key == "__class__":
@@ -43,17 +43,21 @@ class BaseModel():
         self.updated_at = datetime.now()
         storage.save()
 
+
     def to_dict(self):
         """returns a dictionary containing all keys/values
         of __dict__ of the instance"""
-        temp = dict(self.__dict__)
-        temp["updated_at"] = self.__dict__["updated_at"].isoformat()
-        temp["created_at"] = self.__dict__["created_at"].isoformat()
-        temp["__class__"] = self.__class__.__name__
+        temp = self.__dict__
+        for key, value in temp.items():
+            if key == "updated_at":
+                temp["updated_at"] = temp["updated_at"].isoformat()
+            if key == "created_at":
+                temp["created_at"] = temp["created_at"].isoformat()
+        temp["__class__"] = str(self.__class__.__name__)
         return temp
 
     def __str__(self):
         """Makes class printable"""
-        string = "[{}] ".format(self.__class__.__name__)
+        string = "[{})] ".format(self.__class__.__name__)
         string += "({}) {}".format(self.id, self.__dict__)
         return string
